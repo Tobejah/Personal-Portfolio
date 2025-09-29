@@ -63,7 +63,7 @@ const Skills = () => {
         </div>
 
         {/* Three-column horizontal layout */}
-        <div className="max-w-7xl mx-auto flex flex-row gap-6 justify-between">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 md:gap-8">
           
           {/* Technical Skills */}
           <motion.div className="flex-1"
