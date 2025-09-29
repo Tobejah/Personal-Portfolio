@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false); // Close menu after navigation
     }
   };
 
@@ -27,6 +31,7 @@ const Header = () => {
             Portfolio
           </motion.div>
           
+          {/* Desktop navigation */}
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -67,11 +72,51 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               Menu
             </Button>
           </div>
         </nav>
+        {/* Mobile menu dropdown */}
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-background rounded-lg shadow-lg mt-2 p-4 flex flex-col space-y-4"
+          >
+            <button 
+              onClick={() => scrollToSection("home")}
+              className="text-foreground hover:text-primary transition-colors text-left"
+            >
+              Home
+            </button>
+            <button 
+              onClick={() => scrollToSection("about")}
+              className="text-foreground hover:text-primary transition-colors text-left"
+            >
+              About
+            </button>
+            <button 
+              onClick={() => scrollToSection("skills")}
+              className="text-foreground hover:text-primary transition-colors text-left"
+            >
+              Skills
+            </button>
+            <button 
+              onClick={() => scrollToSection("projects")}
+              className="text-foreground hover:text-primary transition-colors text-left"
+            >
+              Projects
+            </button>
+            <button 
+              onClick={() => scrollToSection("contact")}
+              className="text-foreground hover:text-primary transition-colors text-left"
+            >
+              Contact
+            </button>
+          </motion.div>
+        )}
       </div>
     </motion.header>
   );
