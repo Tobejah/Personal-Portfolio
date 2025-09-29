@@ -15,25 +15,25 @@ const Projects = () => {
       title: "Flight Delay Prediction Model",
       description: "Engineered a machine learning pipeline processing 17M+ U.S. flight records to forecast delays. Applied Random Forest, KNN, XGBoost, and Logistic Regression, with SHAP for model interpretability and techniques to address class imbalance. The system improved scheduling accuracy and highlighted key factors driving delays, offering applications for airlines, airports, and logistics planning.",
       image: "https://www.travelai.com/resources/wp-content/uploads/2025/06/netli_07461_a_traveler_with_laptop_or_smartphone_screen_displ_e6242499-5710-4ad8-a0b9-94213a5b3e9c_1-1024x574.png",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      demoUrl: "#",
-      githubUrl: "#"
+      tags: ["Python", "SHAP Analysis", "Machine Learning", "Data Analysis"],
+      demoUrl: "https://github.com/Tobejah",
+      githubUrl: "https://github.com/Tobejah"
     },
     {
       title: "AI-Powered Smart Home Control System",
       description: "Built a real-time, web-based smart home platform with sub-200ms device control. Integrated REST APIs and Socket.IO for seamless connectivity, containerised services with Docker for multi-device testing, and implemented secure JWT authentication. Delivered an intuitive, resilient UI and modular architecture to support scalable, future device integration.",
       image: "https://www.bitsathy.ac.in/wp-content/uploads/Collage-Smart-Homes-JAYANTHI-V-BIT-1-1.jpg",
-      tags: ["React Native", "Firebase", "Redux", "TypeScript"],
-      demoUrl: "#",
-      githubUrl: "#"
+      tags: ["React", "Web Development", "Socket.IO", "JWT"],
+      demoUrl: "https://github.com/Tobejah",
+      githubUrl: "https://github.com/Tobejah"
     },
     {
       title: "Diabetic Patient Readmission Prediction",
       description: "Developed predictive models (Random Forest, XGBoost) on 50,000+ patient records to forecast hospital readmissions. Achieved ROC-AUC 0.87, with simulations showing an 18% reduction in adverse outcomes. Delivered business-focused insights linking predictive accuracy to cost savings and capacity planning in healthcare settings.",
       image: "https://storage.googleapis.com/kaggle-datasets-images/841033/1445892/594c5f79f0fb16ea07edd00a5f4bd38e/dataset-cover.jpg?t=2020-08-27-15-13-52",
-      tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-      demoUrl: "#",
-      githubUrl: "#"
+      tags: ["Python", "Machine Learnining", "Hadoop", "Data Analysis"],
+      demoUrl: "https://github.com/Tobejah",
+      githubUrl: "https://github.com/Tobejah"
     }
   ];
 
@@ -95,7 +95,7 @@ const Projects = () => {
                         <Button 
                           size="sm" 
                           variant="outline" 
-                          className="bg-white/90 hover:bg-white"
+                          className="bg-black/90 hover:bg-white"
                           onClick={() => window.open(project.githubUrl, '_blank')}
                         >
                           <Github size={16} className="mr-2" />

@@ -4,14 +4,19 @@ import { Download } from "lucide-react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
+import CV from "../assets/David_Okeke_Resume.pdf";
 
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleDownloadCV = () => {
-    // In a real application, this would download an actual CV file
-    console.log("Downloading CV...");
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "David_Okeke_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
