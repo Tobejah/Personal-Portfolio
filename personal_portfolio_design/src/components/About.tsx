@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-import CV from "../assets/David_Okeke_Resume.pdf";
+import CV from "../assets/David_Okeke_Zetkin_CV.pdf";
 
 const About = () => {
   const ref = useRef(null);
@@ -13,7 +13,7 @@ const About = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "David_Okeke_Resume.pdf";
+    link.download = "David_Okeke_Zetkin_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

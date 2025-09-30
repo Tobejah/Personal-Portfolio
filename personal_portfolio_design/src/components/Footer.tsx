@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Github, Linkedin, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,11 +29,6 @@ const Footer = () => {
       href: "https://www.linkedin.com/in/david-okeke-tobe/",
       label: "LinkedIn"
     },
-    {
-      icon: Twitter,
-      href: "https://twitter.com/johndoe",
-      label: "Twitter"
-    }
   ];
 
   return (

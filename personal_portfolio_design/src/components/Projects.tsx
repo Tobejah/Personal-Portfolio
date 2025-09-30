@@ -24,8 +24,8 @@ const Projects = () => {
       description: "Built a real-time, web-based smart home platform with sub-200ms device control. Integrated REST APIs and Socket.IO for seamless connectivity, containerised services with Docker for multi-device testing, and implemented secure JWT authentication. Delivered an intuitive, resilient UI and modular architecture to support scalable, future device integration.",
       image: "https://www.bitsathy.ac.in/wp-content/uploads/Collage-Smart-Homes-JAYANTHI-V-BIT-1-1.jpg",
       tags: ["React", "Web Development", "Socket.IO", "JWT"],
-      demoUrl: "https://github.com/Tobejah",
-      githubUrl: "https://github.com/Tobejah"
+      demoUrl: "https://github.com/Tobejah/Smart-Home-Project",
+      githubUrl: "https://github.com/Tobejah/Smart-Home-Project"
     },
     {
       title: "Diabetic Patient Readmission Prediction",
@@ -90,16 +90,7 @@ const Projects = () => {
                           onClick={() => window.open(project.demoUrl, '_blank')}
                         >
                           <ExternalLink size={16} className="mr-2" />
-                          Demo
-                        </Button>
-                        <Button 
-                          size="sm" 
-                          variant="outline" 
-                          className="bg-black/90 hover:bg-white"
-                          onClick={() => window.open(project.githubUrl, '_blank')}
-                        >
-                          <Github size={16} className="mr-2" />
-                          Code
+                          Github
                         </Button>
                       </div>
                     </div>
@@ -129,7 +120,7 @@ const Projects = () => {
                       onClick={() => window.open(project.demoUrl, '_blank')}
                     >
                       <ExternalLink size={16} className="mr-2" />
-                      Live Demo
+                      Github
                     </Button>
                     <Button 
                       size="sm" 

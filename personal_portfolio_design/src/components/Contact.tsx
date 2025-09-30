@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from "./ui/card";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { toast } from "sonner@2.0.3";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
@@ -77,12 +77,6 @@ const Contact = () => {
       href: "https://www.linkedin.com/in/david-okeke-tobe/",
       color: "hover:text-blue-600"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/johndoe",
-      color: "hover:text-blue-400"
-    }
   ];
 
   return (
@@ -159,7 +153,7 @@ const Contact = () => {
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Tell me about your project or just say hello..."
+                      placeholder="Tell me about your project or leave a hello"
                       rows={5}
                       value={formData.message}
                       onChange={handleInputChange}
