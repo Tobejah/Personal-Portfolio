@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-import CV from "../assets/David_Okeke_Zetkin_CV.pdf";
+import CV from "../assets/David_Okeke_CV.pdf";
 
 const About = () => {
   const ref = useRef(null);
@@ -13,7 +13,7 @@ const About = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "David_Okeke_Zetkin_CV.pdf";
+    link.download = "David_Okeke_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -53,7 +53,7 @@ const About = () => {
                       Hello! I'm David Okeke
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
-                    I'm a passionate Full-stack developer/Data Analyst with over 3 years of experience 
+                    I'm a creative Full-stack developer/Data Analyst passionate about
                     creating digital solutions that make a difference. I specialize in 
                     modern web technologies and have a keen eye for user experience design.
                   </p>
