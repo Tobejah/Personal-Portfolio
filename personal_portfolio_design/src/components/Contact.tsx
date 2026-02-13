@@ -59,7 +59,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Alsager, United Kingdom",
+      value: "Pfarrkirchen, Germany",
       href: "#"
     }
   ];

@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-import CV from "../assets/David_Okeke_CV.pdf";
+import CV from "../assets/David_Okeke_Resume.pdf";
 
 const About = () => {
   const ref = useRef(null);
@@ -13,7 +13,7 @@ const About = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "David_Okeke_CV.pdf";
+    link.download = "David_Okeke_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -76,12 +76,12 @@ const About = () => {
                   <div className="space-y-6">
                     <div className="bg-secondary p-6 rounded-lg">
                       <h4 className="font-bold text-card-foreground mb-2">Location</h4>
-                      <p className="text-muted-foreground">Alsager, United Kingdom</p>
+                      <p className="text-muted-foreground">Pfarrkirchen, Germany</p>
                     </div>
                     
                     <div className="bg-secondary p-6 rounded-lg">
                       <h4 className="font-bold text-card-foreground mb-2">Experience</h4>
-                      <p className="text-muted-foreground">3+ Years</p>
+                      <p className="text-muted-foreground">2 Years</p>
                     </div>
                     
                     <div className="bg-secondary p-6 rounded-lg">
