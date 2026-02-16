@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="space-y-2 text-muted-foreground">
               <p>dexter.toby15@gmail.com</p>
               <p>+44 7349493484</p>
-              <p>Pfarrkirchen, Germany</p>
+              <p>Kristianstad, Sweden</p>
             </div>
           </div>
         </div>

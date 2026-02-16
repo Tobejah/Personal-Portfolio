@@ -59,7 +59,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Pfarrkirchen, Germany",
+      value: "Kristianstad, Sweden",
       href: "#"
     }
   ];

@@ -76,7 +76,7 @@ const About = () => {
                   <div className="space-y-6">
                     <div className="bg-secondary p-6 rounded-lg">
                       <h4 className="font-bold text-card-foreground mb-2">Location</h4>
-                      <p className="text-muted-foreground">Pfarrkirchen, Germany</p>
+                      <p className="text-muted-foreground">Kristianstad, Sweden</p>
                     </div>
                     
                     <div className="bg-secondary p-6 rounded-lg">
